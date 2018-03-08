@@ -26,4 +26,5 @@ Installation from `PyPI` is fairly straightforward:
       html_theme = 'kytos'
       html_theme_path = kytos_sphinx_theme.get_html_theme_path()
 
-
+      html_sidebars = {'**': ['globaltoc_sidebar.html'] }
+      html_show_sourcelink = False
