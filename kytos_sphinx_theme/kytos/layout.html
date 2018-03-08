@@ -18,14 +18,10 @@
 <!DOCTYPE html>
 {%- endblock %}
 
-{# Sidebar: Rework into our Bootstrap nav section. #}
-{% macro navBar() %}
-{% include "navbar.html" %}
-{% endmacro %}
-
 {%- macro bsidebar() %}
     {%- if render_sidebar %}
-      <div id="sidebar" class="bs-sidenav" role="complementary">
+      <div id="sidebar" class="bs-sidenav affix-top" role="complementary">
+        {% include "navbar.html" %}
         {%- for sidebartemplate in sidebars %}
           {%- include sidebartemplate %}
         {%- endfor %}
@@ -51,39 +47,33 @@
 {% block sidebarsourcelink %}{% endblock %}
 
 {%- block content %}
-  <div class='kytos-theme-marker-class' id='kytos-theme-content-container'>
-
-   <aside>
-     {{ navBar() }}
+   <aside class="docs-sidebar col-md-4">
      {{ bsidebar() }}
    </aside>
 
-     <div class="container">
+     <div class="container-fluid">
 
-       <div class='row'>
-         <div class='col-md-9 col-md-offset-3'>
+         <div class='col-md-8 col-md-offset-4'>
            <ul class='prev-next-nav'>
              {% if pagename == "index" %}
                {% set prev = false %}
              {% endif %}
              {% include "relations.html" %}
            </ul>
-         </div>
-       </div><!-- breadcumb -->
+         </div><!-- breadcumb -->
 
-       <div class="row">
+       <div class="col-md-8 col-md-offset-4">
          {%- block sidebar1 %}{% endblock %}
-         <div class="{{ bs_span_prefix }}{{ bs_content_width }} content">
+         <div class="content">
            {% block body %}{% endblock %}
          </div>
          {% block sidebar2 %} {# possible location for sidebar #} {% endblock %}
        </div>
      </div>
-  </div>
 {%- endblock %}
 
 {%- block footer %}
-<footer class="footer">
+<footer class="footer col-md-8 col-md-offset-4">
   <div class="container footer-brand">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 brand-area">

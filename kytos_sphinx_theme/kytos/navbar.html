@@ -1,5 +1,4 @@
-<div id="sidebar" class="bs-sidebar">
-  <div class="container-fluid">
+ <div class="row">
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -34,8 +33,8 @@
           {% include "navbarsearchbox.html" %}
         {% endblock %}
       </div>
-  </div>
- <div class="container-fluid">
+ </div>
+ <div class="row">
     <div class="row features-content">
       {% if theme_navbar_title %}
         {% set proj_title = theme_navbar_title %}
@@ -49,5 +48,4 @@
       {% endif %}
       <h1><i class="fa fa-book"></i> Welcome to {{proj_title}} documentation</h1>
     </div>
-  </div>
-</div>
+ </div>
