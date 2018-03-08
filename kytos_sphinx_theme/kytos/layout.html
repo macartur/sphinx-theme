@@ -25,13 +25,11 @@
 
 {%- macro bsidebar() %}
     {%- if render_sidebar %}
-    <div class="{{ bs_span_prefix }}4">
       <div id="sidebar" class="bs-sidenav" role="complementary">
         {%- for sidebartemplate in sidebars %}
           {%- include sidebartemplate %}
         {%- endfor %}
       </div>
-    </div>
     {%- endif %}
 {%- endmacro %}
 

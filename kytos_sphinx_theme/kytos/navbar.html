@@ -1,5 +1,5 @@
-  <div id="navbar" class="{{ theme_navbar_class }} navbar-default {% if theme_navbar_fixed_top|tobool -%} navbar-fixed-top{%- endif -%}">
-  <div class="container">
+<div id="sidebar" class="bs-sidebar">
+  <div class="container-fluid">
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -35,9 +35,7 @@
         {% endblock %}
       </div>
   </div>
-</div>
-<section id="DocsCover" class="container-fluid section-primary section-cover-docs">
-  <div class="container">
+ <div class="container-fluid">
     <div class="row features-content">
       {% if theme_navbar_title %}
         {% set proj_title = theme_navbar_title %}
@@ -52,4 +50,4 @@
       <h1><i class="fa fa-book"></i> Welcome to {{proj_title}} documentation</h1>
     </div>
   </div>
-</section>
+</div>
