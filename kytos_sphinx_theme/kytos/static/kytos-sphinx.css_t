@@ -114,6 +114,7 @@ a {
 aside.docs-sidebar {
    height: 100vh;
    position: fixed;
+   overflow: hidden;
 }
 
 div.content { width: auto; }
@@ -126,6 +127,46 @@ div.sphinxsidebar {
     font-size: 110%;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #68286a;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #222;
+}
+
+.prev-next-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prev-next-nav li {
+  background-image: -webkit-linear-gradient(left, #554077 0%, #2c3e50 100%);
+  background-image: -o-linear-gradient(left, #554077 0%, #2c3e50 100%);
+  background-image: linear-gradient(to right, #554077 0%, #2c3e50 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF554077', endColorstr='#FF2C3E50', GradientType=1);
+  padding: 10px;
+  border-width: 0 !important;
+  opacity: 0.95;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+.prev-next-nav li a {
+  color: #fff;
+}
+.prev-next-nav li:first-child {
+  float: left;
+}
+
+.prev-next-nav li:last-child {
+  float: right;
+}
 
 /* First level of nav */
 
@@ -228,4 +269,8 @@ div.sphinxsidebar {
   color: #51B1CA;
 }
 
-
+@media (max-width: 980px) {
+  aside.docs-sidebar {
+    position: relative;
+  }
+}

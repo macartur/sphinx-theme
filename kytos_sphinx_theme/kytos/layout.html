@@ -47,13 +47,17 @@
 {% block sidebarsourcelink %}{% endblock %}
 
 {%- block content %}
-   <aside class="docs-sidebar col-md-4">
+   <aside class="docs-sidebar col-md-3">
      {{ bsidebar() }}
    </aside>
 
      <div class="container-fluid">
+       <div class="col-md-9 col-md-offset-3">
+         {%- block sidebar1 %}{% endblock %}
+         <div class="content">
+           {% block body %}{% endblock %}
 
-         <div class='col-md-8 col-md-offset-4'>
+         <div class='row'>
            <ul class='prev-next-nav'>
              {% if pagename == "index" %}
                {% set prev = false %}
@@ -62,10 +66,6 @@
            </ul>
          </div><!-- breadcumb -->
 
-       <div class="col-md-8 col-md-offset-4">
-         {%- block sidebar1 %}{% endblock %}
-         <div class="content">
-           {% block body %}{% endblock %}
          </div>
          {% block sidebar2 %} {# possible location for sidebar #} {% endblock %}
        </div>
@@ -73,7 +73,7 @@
 {%- endblock %}
 
 {%- block footer %}
-<footer class="footer col-md-8 col-md-offset-4">
+<footer class="footer col-md-9 col-md-offset-3">
   <div class="container footer-brand">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 brand-area">
