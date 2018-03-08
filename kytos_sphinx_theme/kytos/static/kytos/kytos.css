@@ -104,12 +104,12 @@ div.sphinxsidebar {
 
 /* First level of nav */
 
-.container-fluid aside {
+.kytos-theme-marker-class aside {
  width: 30%;
  position: fixed;
 }
 
-.container-fluid .content {
+.kytos-theme-marker-class .content {
  width: 65%;
  padding-right: 3%;
  float: right;
@@ -223,8 +223,8 @@ div.sphinxsidebar {
 @media (max-width: 780px) {
 
 .footer,
-.container-fluid .content,
-.container-fluid  aside {
+.kytos-theme-marker-class .content,
+.kytos-theme-marker-class  aside {
     position: relative;
     width: 100%;
     }
