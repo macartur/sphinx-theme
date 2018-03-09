@@ -257,13 +257,31 @@ div.sphinxsidebar {
 .navbar-toggle { margin-top: 8px; }
 .navbar-toggle .icon-bar { background: #FFF; }
 .navbar-form { border: none; box-shadow: none; }
-.navbar-collapse.collapse { } 
+.navbar-collapse { float: left; width: auto; }
+.navbar-collapse.in { width: 100%; float: none; } 
 .collapse-header { padding-left: 10%; }
 
 .footer {
  float: right;
+ color: #EEE;
  background: #222;
  padding-left: 2%;
+}
+
+.footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: #FFF;
+}
+
+.footer a:active,
+.footer a:focus,
+.footer a:hover {
+  color: #51B1CA;
+  font-weight: bold;
 }
 
 .back-to-top-button {
