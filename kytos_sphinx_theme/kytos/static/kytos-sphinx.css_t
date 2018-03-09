@@ -248,10 +248,17 @@ div.sphinxsidebar {
 }
 
 .navbar-brand {
-  float: none;
+  float: left;
   padding: 0px;
+  margin: 0px;
   margin-left: 10%;
 }
+
+.navbar-toggle { margin-top: 8px; }
+.navbar-toggle .icon-bar { background: #FFF; }
+.navbar-form { border: none; box-shadow: none; }
+.navbar-collapse.collapse { } 
+.collapse-header { padding-left: 10%; }
 
 .footer {
  float: right;
