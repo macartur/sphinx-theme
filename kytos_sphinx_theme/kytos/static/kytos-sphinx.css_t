@@ -117,7 +117,7 @@ aside.docs-sidebar {
    overflow: hidden;
 }
 
-div.content { width: auto; }
+div.content { float: none; width: auto; }
 #sidebar.affix { position: relative; }
 
 div.sphinxsidebar {
