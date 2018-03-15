@@ -294,7 +294,7 @@ div.sphinxsidebar {
   color: #51B1CA;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 990px) {
   aside.docs-sidebar {
     position: relative;
   }
