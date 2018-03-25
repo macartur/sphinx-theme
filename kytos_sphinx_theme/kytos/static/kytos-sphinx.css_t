@@ -117,7 +117,15 @@ aside.docs-sidebar {
    overflow: hidden;
 }
 
-div.content { float: none; width: auto; }
+div.content {
+ float: none;
+ width: auto;
+}
+
+#kytos-theme-content-container {
+ padding: 5%;
+}
+
 #sidebar.affix { position: relative; }
 
 div.sphinxsidebar {
@@ -265,7 +273,8 @@ div.sphinxsidebar {
  float: right;
  color: #EEE;
  background: #222;
- padding-left: 2%;
+ padding-left: 40px;
+ overflow: auto;
 }
 
 .footer a {
@@ -297,5 +306,9 @@ div.sphinxsidebar {
 @media (max-width: 990px) {
   aside.docs-sidebar {
     position: relative;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
+  footer { width: 100%; }
 }
