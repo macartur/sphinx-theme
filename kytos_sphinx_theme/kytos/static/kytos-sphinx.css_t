@@ -236,7 +236,7 @@ div.sphinxsidebar {
 .bs-sidenav .nav > .active > a,
 .bs-sidenav .nav > .active:hover > a,
 .bs-sidenav .nav > .active:focus > a {
-  color: #FFF;
+  color: #51B1CA;
   background-color: transparent;
   border-right: none;
   border: none;
