@@ -298,12 +298,14 @@ div.sphinxsidebar {
   background: #EAEAEA;
 }
 
+#container-sphinx {
+  min-height: 100vh;
+}
+
 .footer {
- float: right;
  color: #FFF;
  background: #2e373e;
  padding-left: 40px;
- overflow: auto;
 }
 
 .footer a {
