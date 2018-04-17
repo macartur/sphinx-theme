@@ -214,7 +214,7 @@ div.sphinxsidebar {
 	font-weight: bold;
 	padding-left: 5px;
 	margin-left: 10%;
-        margin-top: 4rem;
+        margin-top: 3rem;
 	text-transform: uppercase;
 }
 
@@ -299,7 +299,7 @@ div.sphinxsidebar {
 }
 
 #container-sphinx {
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .footer {
