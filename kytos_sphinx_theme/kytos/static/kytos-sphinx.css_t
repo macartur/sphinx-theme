@@ -135,7 +135,8 @@ div.content {
 }
 
 #kytos-theme-content-container {
- padding: 5%;
+ padding: 5em;
+ margin: 0px;
 }
 
 #sidebar.affix { position: relative; }
