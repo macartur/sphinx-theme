@@ -220,6 +220,15 @@ div.sphinxsidebar {
 	text-transform: uppercase;
 }
 
+.sidebar-header {
+  padding: 1em;
+  margin: 0px;
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* All levels of nav */
 .bs-sidenav .nav > li > a {
   display: block;
@@ -269,7 +278,7 @@ div.sphinxsidebar {
   float: left;
   padding: 0px;
   margin: 0px;
-  margin-left: 10%;
+  margin-left: 1em;
 }
 
 .navbar-toggle { margin-top: 8px; }
@@ -364,4 +373,17 @@ div.sphinxsidebar {
     margin-bottom: 20px;
   }
   footer { width: 100%; }
+}
+
+@media (max-width: 1560px) and (min-width: 990px) {
+  .sidebar-header {
+  display: block;
+  }
+  .navbar-search,
+  .navbar-header {
+    float: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 }
