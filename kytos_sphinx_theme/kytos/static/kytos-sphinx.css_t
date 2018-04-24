@@ -290,6 +290,12 @@ div.sphinxsidebar {
 
 #DocVersions { text-align: center; }
 
+#DropdownVersions {
+  width: auto;
+  position: relative;
+  display: inline-block;
+}
+
 .label-versions {
   font-weight: bold;
   line-height: 32px;

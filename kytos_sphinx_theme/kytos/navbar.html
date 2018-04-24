@@ -34,14 +34,16 @@
       {% if versions %}
         <div id="DocVersions" class="dropdown">
 	  <span class="label-versions">Release/Version: </span>
-          <button id="dropdown-versions" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> {{ current_version }}
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            {%- for version in versions.split(',') %}
-              <li><a href="/{{project_short_name}}/{{version}}">{{ version }}</a></li>
-            {%- endfor %}
-          </ul>
-        </div>
+	  <div id="DropdownVersions">
+            <button id="dropdown-versions" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> {{ current_version }}
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              {%- for version in versions.split(',') %}
+                <li><a href="/{{project_short_name}}/{{version}}">{{ version }}</a></li>
+              {%- endfor %}
+            </ul>
+           </div>
+	</div>
       {% endif %}
 
     </div>
