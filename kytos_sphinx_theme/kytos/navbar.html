@@ -16,18 +16,6 @@
         {% endblock %}
       </div>
 
-      {% if versions %}
-        <div id="DocVersions" class="dropdown pull-right">
-          <button id="dropdown-versions" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> {{ current_version }}
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            {%- for version in versions.split(',') %}
-              <li><a href="/{{project_short_name}}/{{version}}">{{ version }}</a></li>
-            {%- endfor %}
-          </ul>
-        </div>
-      {% endif %}
-
  </div>
  <div class="row">
     <div class="row-fluid features-content">
@@ -42,5 +30,19 @@
         {% set proj_title = '<strong>' + proj_title + '</strong>' %}
       {% endif %}
       <h1>{{proj_title}}</h1>
+
+      {% if versions %}
+        <div id="DocVersions" class="dropdown">
+	  <span class="label-versions">Release/Version: </span>
+          <button id="dropdown-versions" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> {{ current_version }}
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            {%- for version in versions.split(',') %}
+              <li><a href="/{{project_short_name}}/{{version}}">{{ version }}</a></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
     </div>
  </div>

@@ -288,6 +288,19 @@ div.sphinxsidebar {
 .navbar-collapse.in { width: 100%; float: none; } 
 .collapse-header { padding-left: 10%; }
 
+#DocVersions { text-align: center; }
+
+.label-versions {
+  font-weight: bold;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  background: #68286a;
+  min-width: 100px;
+}
+
 .alert,
 .admonition {
   padding: 20px;
