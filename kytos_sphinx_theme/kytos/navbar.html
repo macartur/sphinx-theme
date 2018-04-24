@@ -22,7 +22,7 @@
           <span class="caret"></span></button>
           <ul class="dropdown-menu">
             {%- for version in versions.split(',') %}
-              <li><a href="{{project_short_name}}/{{version}}">{{ version }}</a></li>
+              <li><a href="/{{project_short_name}}/{{version}}">{{ version }}</a></li>
             {%- endfor %}
           </ul>
         </div>
