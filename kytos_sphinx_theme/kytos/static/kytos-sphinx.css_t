@@ -294,6 +294,7 @@ div.sphinxsidebar {
   border: 2px solid #f8d7da;
   border-radius: 8px;
   border-left: 10px solid #f8d7da;
+  background: #fafafa;
 }
 
 .admonition.note {
@@ -306,7 +307,7 @@ div.sphinxsidebar {
   padding: 0 1em;
   border-left: 10px solid #f8d7da;
   border-radius: 8px;
-  background: #EAEAEA;
+  background: #fafafa;
 }
 
 #container-sphinx {
