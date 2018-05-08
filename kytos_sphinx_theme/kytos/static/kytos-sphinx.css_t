@@ -136,7 +136,8 @@ div.content {
 
 #kytos-theme-content-container {
  padding: 5em;
- margin: 0px;
+ padding-bottom: 7em;
+ margin: 0;
 }
 
 #sidebar.affix { position: relative; }
@@ -161,6 +162,9 @@ div.sphinxsidebar {
 .prev-next-nav {
   list-style-type: none;
   margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 40px;
   padding: 0;
 }
 
@@ -315,7 +319,7 @@ div.sphinxsidebar {
   padding: 20px;
   border: 2px solid #f8d7da;
   border-radius: 8px;
-  border-left: 10px solid #f8d7da;
+  border-left: 8px solid #f8d7da;
   background: #fafafa;
 }
 
@@ -327,7 +331,7 @@ div.sphinxsidebar {
   font-size: 1em;
   border: 2px solid #f8d7da;
   padding: 0 1em;
-  border-left: 10px solid #f8d7da;
+  border-left: 8px solid #f8d7da;
   border-radius: 8px;
   background: #fafafa;
 }
@@ -339,7 +343,8 @@ div.sphinxsidebar {
 .footer {
  color: #FFF;
  background: #2e373e;
- padding-left: 40px;
+ padding: 5em;
+ padding-bottom: 2em;
 }
 
 .footer a {
@@ -359,6 +364,7 @@ div.sphinxsidebar {
 
 .footer h1, .footer h2 {
   color: #FFF;
+  margin-top: 0px;
 }
 
 .footer h3 {
@@ -366,11 +372,25 @@ div.sphinxsidebar {
   font-size: 1.6em;
 }
 
+.footer hr {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  border-top: 1px solid #35053F;
+}
+
+.footer .text-center p {
+  line-height: 1rem;
+  margin: 0;
+  font-size: 0.6rem;
+  font-weight: 100;
+}
+
 .footer ul {
   list-style: none;
   padding: 0px;
   line-height: 1em;
   margin-top: 1.5em;
+  font-size: 0.8rem;
 }
 
 .copyright {
