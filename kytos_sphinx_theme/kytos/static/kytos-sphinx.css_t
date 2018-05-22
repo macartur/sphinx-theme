@@ -212,24 +212,24 @@ div.sphinxsidebar {
 }
 
 #sidebar h1 {
-	text-align:  left;
-	color: #51B1CA;
-	border-left: 10px solid #68286A;
-        font-size: 1.4rem;
-	font-weight: bold;
-	padding-left: 0.5rem;
-	margin: 1rem;
-        margin-top: 3rem;
-        word-break: break-word;
-	text-transform: uppercase;
+  text-align:  left;
+  color: #51B1CA;
+  border-left: 10px solid #68286A;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  margin: 1rem;
+  margin-top: 3rem;
+  margin-left: 3em;
+  word-break: break-word;
+  text-transform: uppercase;
 }
 
 .sidebar-header {
   padding: 1em;
+  padding-left: 3em;
   margin: 0px;
   float: none;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -425,8 +425,9 @@ div.sphinxsidebar {
   .navbar-search,
   .navbar-header {
     float: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
   }
 }
