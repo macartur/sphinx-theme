@@ -414,20 +414,8 @@ div.sphinxsidebar {
     height: auto;
     padding-bottom: 60px;
     margin-bottom: 20px;
+    background: linear-gradient(45deg, #68286a 0%,#322c5d 30%,#207cca 30%,#322c5d 30%);
   }
   footer { width: 100%; }
 }
 
-@media (max-width: 1560px) and (min-width: 990px) {
-  .sidebar-header {
-  display: block;
-  }
-  .navbar-search,
-  .navbar-header {
-    float: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0px;
-  }
-}
