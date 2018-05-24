@@ -698,9 +698,8 @@ footer#footer {
   padding: 3rem 6rem 0;
   }
 
-
   .social-icons a {
-    color: $kytos-tertiary-color !important;
+    color: #FFF;
   }
 
 }
@@ -758,9 +757,6 @@ footer#footer {
     border-left: 0px;
     margin-left: -20px;
   }
-  div.row.docs-social {
-    display: none;
-  }  
   p.resume {
     padding-bottom: 2rem !important;
   }
@@ -815,9 +811,6 @@ footer#footer {
     height: 100%;
     border-left: 0px;
     margin-left: -20px;
-  }
-  div.row.docs-social {
-    display: none;
   }
   img.administrator {
     display: none;
@@ -874,9 +867,6 @@ footer#footer {
     border-left: 0px;
     margin-left: -20px;
   }
-  div.row.docs-social {
-    display: none;
-  }  
   section {
     padding: 6rem 3rem !important;
   } 
@@ -932,9 +922,6 @@ footer#footer {
     height: 100%;
     border-left: 0px;
     margin-left: -20px;
-  }
-  div.row.docs-social {
-    display: none;
   }
   img.administrator {
     display: none;

@@ -215,19 +215,17 @@ div.sphinxsidebar {
   text-align:  left;
   color: #51B1CA;
   border-left: 10px solid #68286A;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: bold;
-  padding-left: 0.5rem;
-  margin: 1rem;
-  margin-top: 3rem;
-  margin-left: 3em;
+  padding-left: 0.3em;
+  margin: 1em;
+  margin-left: 2em;
   word-break: break-word;
   text-transform: uppercase;
 }
 
 .sidebar-header {
   padding: 1em;
-  padding-left: 3em;
   margin: 0px;
   float: none;
   justify-content: center;
@@ -284,6 +282,9 @@ div.sphinxsidebar {
   margin: 0px;
   margin-left: 1em;
 }
+
+.navbar-header { float: left; }
+.navbar-search { float: right; }
 
 .navbar-toggle { margin-top: 8px; }
 .navbar-toggle .icon-bar { background: #FFF; }
@@ -375,7 +376,7 @@ div.sphinxsidebar {
 .footer hr {
   margin-top: 3em;
   margin-bottom: 1em;
-  border-top: 1px solid #35053F;
+  border-top: 1px solid #EEE;
 }
 
 .footer .text-center p {
@@ -408,7 +409,7 @@ div.sphinxsidebar {
   color: #51B1CA;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 979px) {
   aside.docs-sidebar {
     position: relative;
     height: auto;
@@ -417,5 +418,13 @@ div.sphinxsidebar {
     background: linear-gradient(45deg, #68286a 0%,#322c5d 30%,#207cca 30%,#322c5d 30%);
   }
   footer { width: 100%; }
+  .navbar-header { margin-top: 7px; }
 }
 
+
+@media (max-width: 451px) {
+  div.sphinxsidebar { margin-left: 0px; }
+  #sidebar h1 { margin-left: 1em; }
+  .sidebar-header { padding-left: 0px; }
+  .footer, #kytos-theme-content-container { padding: 2em; }
+}
