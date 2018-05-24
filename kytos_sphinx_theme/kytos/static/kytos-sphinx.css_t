@@ -171,7 +171,7 @@ div.sphinxsidebar {
 .prev-next-nav li {
   padding: 10px;
   background: #FFF;
-  border: 2px solid #00b4c4;
+  border: 1px solid #00b4c4;
   opacity: 0.95;
   -webkit-box-shadow: none;
   box-shadow: none;
