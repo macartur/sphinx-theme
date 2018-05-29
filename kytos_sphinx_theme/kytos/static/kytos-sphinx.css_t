@@ -68,8 +68,9 @@ code, .rst-content tt, .rst-content code {
 }
 
 a {
-  color: #6e5baa;
+  color: #008690;
   text-decoration: none;
+  font-weight: 500;
 }
 
 code,
@@ -181,12 +182,9 @@ div.sphinxsidebar {
 .prev-next-nav li a {
   color: #00b4c4;
 }
+
 .prev-next-nav li:first-child {
   float: left;
-}
-
-.prev-next-nav li:last-child {
-  float: right;
 }
 
 /* First level of nav */
