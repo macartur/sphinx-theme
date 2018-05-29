@@ -183,6 +183,10 @@ div.sphinxsidebar {
   color: #00b4c4;
 }
 
+.prev-next-nav li {
+  float: right;
+}
+
 .prev-next-nav li:first-child {
   float: left;
 }
