@@ -196,6 +196,7 @@ div.sphinxsidebar {
 .sphinxsidebarwrapper p.caption { display: none; }
 
 .bs-sidenav {
+  position: relative;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0px;
@@ -411,7 +412,7 @@ div.sphinxsidebar {
   color: #51B1CA;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 990px) {
   aside.docs-sidebar {
     position: relative;
     height: auto;
