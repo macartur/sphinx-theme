@@ -65,13 +65,13 @@ aside {
   margin-right: 30px;
   padding-right: 15px;
   background-color: #68286a;
-  background: url('/static/img/documentation/Robot.svg'); background-position: center bottom; background-repeat: no-repeat;
+  background: url('/_static/images/Robot.svg'); background-position: center bottom; background-repeat: no-repeat;
   /* FF3.6-15 */
-  background: url('/static/img/documentation/Robot.svg'), -moz-linear-gradient(45deg, #68286a 0%, #322c5d 100%, #207cca 100%, #322c5d 100%);; background-position: center bottom; background-repeat: no-repeat;
+  background: url('/_static/images/Robot.svg'), -moz-linear-gradient(45deg, #68286a 0%, #322c5d 100%, #207cca 100%, #322c5d 100%);; background-position: center bottom; background-repeat: no-repeat;
   /* Chrome10-25,Safari5.1-6 */
-  background: url('/static/img/documentation/Robot.svg'), -webkit-linear-gradient(45deg, #68286a 0%,#322c5d 100%,#207cca 100%,#322c5d 100%);; background-position: center bottom; background-repeat: no-repeat;
+  background: url('/_static/images/Robot.svg'), -webkit-linear-gradient(45deg, #68286a 0%,#322c5d 100%,#207cca 100%,#322c5d 100%);; background-position: center bottom; background-repeat: no-repeat;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: url('/static/img/documentation/Robot.svg'), linear-gradient(45deg, #68286a 0%,#322c5d 100%,#207cca 100%,#322c5d 100%);; background-position: center bottom; background-repeat: no-repeat;
+  background: url('/_static/images/Robot.svg'), linear-gradient(45deg, #68286a 0%,#322c5d 100%,#207cca 100%,#322c5d 100%);; background-position: center bottom; background-repeat: no-repeat;
   /* IE6-9 fallback on horizontal gradient */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68286a', endColorstr='#322c5d',GradientType=1 );
   border: none;
@@ -145,21 +145,21 @@ h1 {
 }
 
 span.overview::before{
-  content: url('/static/img/documentation/Overview-Icon.svg');
+  content: url('/_static/images/Overview-Icon.svg');
   margin-right: 15px;
   float: left;
 
 }
 
 span.administrator::before{
-  content: url('/static/img/documentation/Administrator-Icon.svg');
+  content: url('/_static/images/Administrator-Icon.svg');
   margin-right: 15px;
   float: left;
 
 }
 
 span.developer::before{
-  content: url('/static/img/documentation/Developer-Icon.svg');
+  content: url('/_static/images/Developer-Icon.svg');
   margin-right: 15px;
   float: left;
 
