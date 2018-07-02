@@ -111,7 +111,7 @@
               return (this.top = offsetTop - navOuterHeight);
             },
             bottom: function () {
-              return (this.bottom = $(".footer").outerHeight(true));
+              return (this.bottom = $("footer .text-center").outerHeight(true));
             }
           }
         })
