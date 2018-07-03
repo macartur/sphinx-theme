@@ -130,6 +130,10 @@ div.content {
  width: auto;
 }
 
+#kytos-theme-content-container div.figure {
+  float: left;
+}
+
 #kytos-theme-content-container .highlight {
   padding: 20px;
   border-radius: 5px;
