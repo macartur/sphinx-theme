@@ -226,27 +226,6 @@ h1 {
   line-height: 1.1;
 }
 
-span.overview::before{
-  content: url('/_static/images/Overview-Icon.svg');
-  margin-right: 15px;
-  float: left;
-
-}
-
-span.administrator::before{
-  content: url('/_static/images/Administrator-Icon.svg');
-  margin-right: 15px;
-  float: left;
-
-}
-
-span.developer::before{
-  content: url('/_static/images/Developer-Icon.svg');
-  margin-right: 15px;
-  float: left;
-
-}
-
 h2 {
   font-style: normal;
   font-weight: 400;

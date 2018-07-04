@@ -296,20 +296,48 @@ div.sphinxsidebar {
 .navbar-toggle { margin-top: 8px; }
 .navbar-toggle .icon-bar { background: #FFF; }
 .navbar-form { border: none; box-shadow: none; }
-.navbar-collapse { float: left; width: auto; }
+
+.navbar-collapse { float: right; width: 250px; }
+
 .navbar-collapse.in { width: 100%; float: none; } 
 .collapse-header { padding-left: 10%; }
 
+.navbar-nav {
+    margin: 0px;
+    display: inline-block;
+    float: right;
+}
+
+.navbar-options li {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    font-size: 0.7em;
+    opacity: 0.95;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.navbar-options li {
+    border: 1px solid transparent;
+}
+.navbar-options li.active,
+.navbar-options li:hover {
+    border: 1px solid #00b4c4; 
+}
+
+
 #search-navbar { 
 position: absolute;
-right: 25px;
-margin-top: 13px;
+right: 20px;
+margin-top: 10px;
 }
 #search-navbar .form-group {
   float: right !important;
   transition: all 0.35s, border-radius 0s;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 36px;
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   border-radius: 5px;
@@ -330,7 +358,7 @@ margin-top: 13px;
 }
 #search-navbar .form-group:hover,
 #search-navbar .form-group.hover {
-  width: 230px;
+  width: 245px;
   border-radius: 5px;
 }
 #search-navbar .form-group span.form-control-feedback {
@@ -339,13 +367,13 @@ margin-top: 13px;
   right: -2px;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
   text-align: center;
   color: #3596e0;
   left: initial;
-  font-size: 14px;
+  font-size: 15px;
 }
 #search-navbar .fa-search:before {
   font-size: 1.3em;
@@ -486,4 +514,55 @@ margin-top: 13px;
   #sidebar h1 { margin-left: 1em; }
   .sidebar-header { padding-left: 0px; }
   .footer, #kytos-theme-content-container { padding: 2em; }
+}
+
+
+
+@media (max-width: 769px) {
+    #search-navbar,
+   .navbar-options.collapsing li,
+   .navbar-options.in li:hover,
+   .navbar-options.in li { 
+    	border: none;
+    	border-bottom: 1px solid #151d24;
+    	border-radius: none;
+    	margin: 0px;
+    	padding: 1em;
+    	margin-right: -20px;
+    	margin-left: -20px;
+   }
+
+   #search-navbar,
+   .navbar-options.collapsing,
+   .navbar-collapse.in {
+   	width: 110%;
+   	top: 20px;
+   	position: relative;
+   	margin-left: -30px;
+   	text-align: center;
+   	background: #2e373e;
+   	float: none;
+   }
+
+   .navbar-options.collapsing ul,
+   .navbar-collapse.in ul {
+   	width: 100%;
+   }
+
+   #search-navbar {
+      width: 90%;
+      display: block;
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+      left: 3%;
+      top: 0px;
+   }
+
+   #search-navbar .form-group:hover,
+   #search-navbar .form-group.hover,
+   #search-navbar .form-group {
+     width: 100%;
+     border-radius: 5px;
+   }
 }

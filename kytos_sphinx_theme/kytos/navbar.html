@@ -11,7 +11,27 @@
       {% endif %}
     </div>
 
-      <div class="navbar-search">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+      <div class="navbar-options collapse navbar-collapse nav-collapse">
+
+        <ul class="nav navbar-nav">
+          <li {% if active == "admin" %} class='active' {% endif %}>
+           <a href="/admin/index.html" title="I'm Admin">
+            <span>I'm an admin</span>
+           </a>
+          </li>
+          <li  {% if active == "developer" %} class='active' {% endif %}>
+           <a href="/developer/index.html" title="I'm Dev">
+            <span>I'm a dev</span>
+           </a>
+          </li>
+        </ul>
+
         {% block navbarsearch %}
           {% include "navbarsearchbox.html" %}
         {% endblock %}
