@@ -1,9 +1,9 @@
 {% block navbar %}
  <div class="row sidebar-header">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://docs.kytos.io">
+      <a class="navbar-brand" href="/">
         {%- block sidebarlogo %}
-          <img src="{{ pathto('_static/kytos/images/logo.png', 1) }}" alt="{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}" title="{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}">
+          <img src="{{ pathto('_static/kytos.svg', 1) }}" width="100px" alt="{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}" title="{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}">
         {%- endblock %}
       </a>
       {% if show_version %}

@@ -297,9 +297,8 @@ div.sphinxsidebar {
 .navbar-toggle .icon-bar { background: #FFF; }
 .navbar-form { border: none; box-shadow: none; }
 
-.navbar-collapse { float: right; width: 250px; }
+.navbar-collapse { float: left; width: 250px; }
 
-.navbar-collapse.in { width: 100%; float: none; } 
 .collapse-header { padding-left: 10%; }
 
 .navbar-nav {
@@ -544,6 +543,7 @@ div.sphinxsidebar {
    	text-align: center;
    	background: #2e373e;
    	float: none;
+        overflow: hidden;
    }
 
    .navbar-options.collapsing ul,
