@@ -300,6 +300,58 @@ div.sphinxsidebar {
 .navbar-collapse.in { width: 100%; float: none; } 
 .collapse-header { padding-left: 10%; }
 
+#search-navbar { 
+position: absolute;
+right: 25px;
+margin-top: 13px;
+}
+#search-navbar .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#search-navbar .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+#search-navbar .form-group input.form-control::-webkit-input-placeholder,
+#search-navbar .form-group input.form-control:-moz-placeholder,
+#search-navbar .form-group input.form-control::-moz-placeholder,
+#search-navbar .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+#search-navbar .form-group:hover,
+#search-navbar .form-group.hover {
+  width: 230px;
+  border-radius: 5px;
+}
+#search-navbar .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+#search-navbar .fa-search:before {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
 #DocVersions { text-align: center; }
 
 #DropdownVersions {

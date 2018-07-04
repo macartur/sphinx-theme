@@ -1,7 +1,9 @@
 {%- if pagename != "search" %}
-<form class="navbar-form navbar-right" action="{{ pathto('search') }}" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+<form id="search-navbar" class="search-form navbar-right" action="{{ pathto('search') }}" method="get">
+ <div class="form-group has-feedback">
+  <label for="search" class="sr-only">Search</label>
+  <input type="text" name="q" id="search" class="form-control" placeholder="Search" />
+  <span class="glyphicon fa fa-search form-control-feedback"></span>
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
