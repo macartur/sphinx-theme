@@ -14,6 +14,9 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   counter-reset: sidenote-counter;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* HELPERS */
@@ -662,8 +665,9 @@ div#social-kytos {
   display: inline-block;
   font: normal normal normal 24px/1 FontAwesome;
   text-rendering: auto;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing:  antialised;
-  -moz-osx-font-smoothing: graysca;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .aside-social-text {
