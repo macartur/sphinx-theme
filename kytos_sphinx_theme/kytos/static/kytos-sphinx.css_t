@@ -297,7 +297,12 @@ div.sphinxsidebar {
 .navbar-toggle .icon-bar { background: #FFF; }
 .navbar-form { border: none; box-shadow: none; }
 
-.navbar-collapse { float: left; width: 250px; }
+.navbar-collapse { margin-right: 15px; }
+
+.navbar-collapse ul {
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+}
 
 .collapse-header { padding-left: 10%; }
 
