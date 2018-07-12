@@ -379,7 +379,7 @@ div.sphinxsidebar {
   height: 37px;
   line-height: 37px;
   text-align: center;
-  color: #3596e0;
+  color: #008690;
   left: initial;
   font-size: 15px;
 }
